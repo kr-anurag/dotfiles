@@ -7,6 +7,9 @@
 [user]
 	name = Anurag
 	email = kr.anurag24@gmail.com
+	signingkey = 360E1363FACCE690
+[commit]
+	gpgsign = true
 [alias]
     s = status
 	co = checkout
