@@ -11,9 +11,24 @@
 [commit]
 	gpgsign = true
 [alias]
-    s = status
 	co = checkout
-	cob = checkout -b
-	del = branch -D
-	save = !git add -A && git commit 
-	ggp = !git push origin HEAD
+	br = branch
+	ci = commit
+	st = status
+	un = uncommitted
+	up = update
+	lo = log --oneline --decorate
+	# aliases to push
+	ps = push
+	pu = push --set-upstream
+	pb = push --set-upstream origin $(current_branch)
+	po = push origin
+	pd = push --delete
+	# aliases to pull
+	pl = pull
+	pr = pull --rebase
+	# aliases to fetch
+	fa = fetch --all
+	fo = fetch origin
+	fd = fetch origin $(current_branch)
+	ga = add -A .
