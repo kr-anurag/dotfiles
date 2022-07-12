@@ -21,3 +21,8 @@ alias fa='git fetch --all'
 alias fo='git fetch origin'
 alias fd='git fetch origin $(current_branch)'
 alias ga='git add -A .'
+
+# other aliases
+alias cls="clear"
+alias yd="yarn dev"
+alias ys="yarn run start"
